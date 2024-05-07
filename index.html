@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time!
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required/>
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Who are you?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="man">Man</option>
+            <option value="woman">Woman</option>
+            <option value="third">Third</option>
+            <option value="dog">Dog</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Are you married?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="yes"
+              type="radio"
+              class="input-radio"
+              checked
+            />Yes</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="no"
+              type="radio"
+              class="input-radio"
+            />No</label
+          >
+        </div>
+        <div class="form-group">
+          <p>What would you like?</p>
+          <label
+            ><input
+              name="prefer"
+              value="code"
+              type="checkbox"
+              class="input-checkbox"
+            />Code</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="only-code"
+              type="checkbox"
+              class="input-checkbox"
+            />Only code</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="no-code"
+              type="checkbox"
+              class="input-checkbox"
+            />No code</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
