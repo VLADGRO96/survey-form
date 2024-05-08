@@ -35,8 +35,8 @@ body {
   cursor: pointer;
   position: relative;
   margin: auto;
-  width: 18px;
-  height: 18px;
+  width: 10px;
+  height: 10px;
   -webkit-tap-highlight-color: transparent;
   transform: translate3d(0, 0, 0);
 }
